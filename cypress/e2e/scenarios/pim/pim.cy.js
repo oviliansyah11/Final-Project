@@ -24,6 +24,8 @@ describe("Check PIM Function", () => {
     PIM.btnAdd();
     PIM.inputFirstName(faker.name.firstName());
     PIM.inputLastName(faker.name.lastName());
+    const id = Math.floor(Math.random() * 10111);
+    PIM.inputId(id);
     PIM.btnSave();
     PIM.successMessage("Successfully Saved");
   });
@@ -32,6 +34,8 @@ describe("Check PIM Function", () => {
     PIM.btnAdd();
     PIM.inputFirstName(faker.name.firstName());
     PIM.inputLastName(faker.name.lastName());
+    const id = Math.floor(Math.random() * 10111);
+    PIM.inputId(id);
     PIM.btnImage("valid_pic.jpg");
     cy.wait(3);
     PIM.btnSave();

@@ -73,7 +73,7 @@ class Admin {
   }
 
   successMessage(message) {
-    this.elements.successMessage().should("be.visible").contains(message);
+    this.elements.successMessage().contains(message);
   }
 }
 
