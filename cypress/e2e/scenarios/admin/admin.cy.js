@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 const Admin = require("../../../pages/Admin/Admin");
 const Login_Page = require("../../../pages/Login/Login_Page");
 import { faker } from "@faker-js/faker";
@@ -11,6 +12,7 @@ describe("Check Admin Function", () => {
     Login_Page.enterUsername("Admin");
     Login_Page.enterPassword("admin123");
     Login_Page.clickLogin();
+    cy.wait(2);
   });
 
   it("TC_01 - Add user without filling any data", () => {

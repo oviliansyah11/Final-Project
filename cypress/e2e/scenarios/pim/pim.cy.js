@@ -11,6 +11,7 @@ describe("Check PIM Function", () => {
     Login_Page.enterUsername("Admin");
     Login_Page.enterPassword("admin123");
     Login_Page.clickLogin();
+    cy.wait(2);
   });
 
   it("TC_01 - Add Employee without filling any data", () => {
