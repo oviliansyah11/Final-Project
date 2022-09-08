@@ -21,7 +21,7 @@ describe("Check Recruitment Function", () => {
     cy.wait(2);
   });
 
-  it("Add candidate without filling any data", () => {
+  it("TC_01 - Add candidate without filling any data", () => {
     cy.viewport(1280, 900);
     Recruitment.menuRecruitment();
     Recruitment.btnAdd();
@@ -29,7 +29,7 @@ describe("Check Recruitment Function", () => {
     Recruitment.reqMessage("Required");
   });
 
-  it("Add Candidate with valid data", () => {
+  it("TC_02 - Add Candidate with valid data", () => {
     cy.viewport(1280, 900);
     Recruitment.menuRecruitment();
     Recruitment.btnAdd();

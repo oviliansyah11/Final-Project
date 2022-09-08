@@ -19,7 +19,7 @@ describe("Check Dashboard Function", () => {
     cy.wait(2);
   });
 
-  it("View Dashboard pages", () => {
+  it("TC_01 - View Dashboard pages", () => {
     cy.viewport(1280, 900);
     Dashboard.menuDashboard();
     Dashboard.title("Launching Soon");

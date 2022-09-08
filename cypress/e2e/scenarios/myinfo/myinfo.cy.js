@@ -21,14 +21,14 @@ describe("Check My Info Function", () => {
     cy.wait(2);
   });
 
-  it("View Details of Employee", () => {
+  it("TC_01 - View Details of Employee", () => {
     cy.viewport(1280, 900);
     MyInfo.menuMyInfo();
     MyInfo.employeeName("Paul Collings");
     MyInfo.personalDetails("Personal Details");
   });
 
-  it("Add Nickname for Employee", () => {
+  it("TC_02 - Add Nickname for Employee", () => {
     cy.viewport(1280, 900);
     MyInfo.menuMyInfo();
     MyInfo.employeeName();

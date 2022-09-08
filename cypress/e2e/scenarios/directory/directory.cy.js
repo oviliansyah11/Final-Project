@@ -19,7 +19,7 @@ describe("Check Directory Function", () => {
     cy.wait(2);
   });
 
-  it("View Directory Pages", () => {
+  it("TC_01 - View Directory Pages", () => {
     cy.viewport(1280, 900);
     Directory.menuDirectory();
     cy.wait(2);

@@ -19,7 +19,7 @@ describe("Check Maintenance Function", () => {
     cy.wait(2);
   });
 
-  it("View Maintenance Pages", () => {
+  it("TC_01 - View Maintenance Pages", () => {
     cy.viewport(1280, 900);
     Maintenance.menuMaintenance();
     cy.wait(2);

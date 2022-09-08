@@ -15,7 +15,7 @@ describe("Check Leave Function", () => {
     cy.wait(2);
   });
 
-  it("Add Comment for requests", () => {
+  it("TC_01 - Add Comment for requests", () => {
     cy.viewport(1280, 900);
     Leave.clickMenuLeave();
     cy.wait(2);

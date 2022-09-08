@@ -20,7 +20,7 @@ describe("Check Performance Function", () => {
     cy.wait(2);
   });
 
-  it("View Employee Performance Trackers", () => {
+  it("TC_01 - View Employee Performance Trackers", () => {
     cy.viewport(1280, 900);
     Performance.menuPerformance();
     Performance.menuEmployeeTrackers();
@@ -28,7 +28,7 @@ describe("Check Performance Function", () => {
     cy.wait(2);
   });
 
-  it("View Employee Performance Trackers", () => {
+  it("TC_02 - View Employee Performance Trackers", () => {
     cy.viewport(1280, 900);
     Performance.menuPerformance();
     Performance.menuEmployeeTrackers();

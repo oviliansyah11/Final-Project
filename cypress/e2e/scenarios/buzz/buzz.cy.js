@@ -19,7 +19,7 @@ describe("Check Buzz Function", () => {
     cy.wait(5);
   });
 
-  it("View Buzz pages", () => {
+  it("TC_01 - View Buzz pages", () => {
     cy.viewport(1280, 900);
     Buzz.menuBuzz();
     Buzz.title("Launching Soon");
